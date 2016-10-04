@@ -18,17 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m3j-aA-CJy">
-                                <frame key="frameInset" minX="67" minY="178" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m3j-aA-CJy">
+                                <frame key="frameInset" minX="47" minY="154" width="280" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLI-Ii-GW4">
                                 <frame key="frameInset" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
+                                    <barButtonItem width="108" style="plain" systemItem="fixedSpace" id="Csn-1H-dye"/>
+                                    <barButtonItem title="Camera" id="3e8-Pg-8zN">
+                                        <connections>
+                                            <action selector="pickAnImageFromCamera:" destination="BYZ-38-t0r" id="aDJ-4t-uid"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Album" id="4X6-3g-c5n">
                                         <connections>
-                                            <action selector="pickAnImage:" destination="BYZ-38-t0r" id="6g4-b2-ccD"/>
+                                            <action selector="pickAnImageFromAlbum:" destination="BYZ-38-t0r" id="iOW-i0-VRb"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -42,6 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>
